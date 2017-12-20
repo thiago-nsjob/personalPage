@@ -1,0 +1,43 @@
+   @media screen and (min-width: 280px) {
+       .title {
+           font-size: 20pt;
+       }
+       .sPadding {
+           padding-top: 2%;
+       }
+   }
+   
+   @media screen and (min-width: 480px) {
+       .title {
+           font-size: 30pt;
+       }
+       .sPadding {
+           padding-top: 2%;
+       }
+   }
+   
+   @media screen and (min-width: 800px) {
+       .title {
+           font-size: 40pt;
+       }
+       .sPadding {
+           padding-top: 1%;
+       }
+   }
+   
+   @media screen and (min-width: 1200px) {
+       .title {
+           font-size: 40pt;
+       }
+       .sPadding {
+           padding-top: 1%;
+       }
+   }
+   
+   .bWite {
+       background-color: white;
+   }
+   
+   .bDarkGray {
+       background-color: #252525;
+   }
