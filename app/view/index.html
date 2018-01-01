@@ -14,147 +14,167 @@
 </head>
 
 <body>
-    <nav class="nav-extended">
-        <div class="nav-wrapper purple darken-4">
-
-            <div class="center-align sPadding">
-                <img class="circle responsive-img hoverable" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
+    <div id="headerBlock" class="headerBlock">
+        <div class="center-align sPadding">
+            <img class="circle responsive-img hoverable" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
+        </div>
+        <div class="center-align"><span class="title">Thiago N F Silva</span></div>
+        <div id="topNavBar" class="block">
+            <nav class="nav-extended" data-target="topNavBar" style="top: 0px;">
+                <div class="nav-wrapper">
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    </ul>
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href="#about_body">About</a></li>
+                            <li class="tab"><a href="#portifolio_body">Portifolio</a></li>
+                            <li class="tab"><a href="#skills_body">Skills</a></li>
+                            <li class="tab"><a href="#work_history_body">Work History</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="aboutBlock" class="block">
+        <nav class="pushpin-nav indigo lighten-4 hoverable" data-target="aboutBlock" style="top: 0px;">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">About</a>
+                <i class="material-icons">account_circle</i>
             </div>
-            <div class=" center-align"><span class="title">Thiago N F Silva</span></div>
-            <ul id="nav-mobile" class="right hide-on-med-and-down purple darken-1">
-            </ul>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#about_body">About</a></li>
-                    <li class="tab"><a href="#portifolio_body">Portifolio</a></li>
-                    <li class="tab"><a href="#skills_body">Skills</a></li>
-                    <li class="tab"><a href="#work_history_body">Work History</a></li>
-                </ul>
+        </nav>
+    </div>
+    <div id="portifolioBlock" class="block">
+        <nav class="pushpin-nav" data-target="portifolioBlock" style="top: 0px;">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">Portifolio</a>
+                <i class="material-icons">code</i>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col s12 m6 2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src=" https://cdn.scotch.io/10/gQtdUwRGQKOpbWRunyRg_How_to_Make_Your_Existing_React_App_Progressive_in_10_Minutes.png.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src=" https://cdn.scotch.io/1/d0YqyIA0Saq85mFLlS2w_whats-new-in-express-5.png.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 2">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src=" https://cdn.scotch.io/38945/0Mw9TvrT3mgawkLkAyhQ_Vue.Js%20and%20React.Js-A%20Quick%20Comparison.png.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="skillsBlock" class="block">
+        <nav class="pushpin-nav" data-target="skillsBlock" style="top: 0px;">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">Skills</a>
+                <i class="material-icons">equalizer</i>
+            </div>
+        </nav>
+    </div>
+    <div id="workingHistoriyBlock" class="block">
+        <nav class="pushpin-nav" data-target="workingHistoriyBlock" style="top: 0px;">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">Work History</a>
+                <i class="material-icons">folder_shared</i>
+            </div>
+        </nav>
+    </div>
+    <footer class="page-footer ">
+        <div class="container ">
+            <div class="row ">
+                <h4 class="white-text">You can find me here</h4>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="col s3 m2 1">
+                        <a href="#!"> <img class=" responsive-img contactIcon bBorder" src="public/img/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <div class="col s3 m2 1">
+                        <a href="#!"><img class=" responsive-img contactIcon" src="public/img/facebook-logo.svg" alt="Facebook">
+                        </a>
+                    </div>
+                    <div class="col s3 m2 1">
+                        <a href="#!"><img class=" responsive-img  contactIcon" src="public/img/git.png" alt="git">
+                        </a>
+                    </div>
+                    <div class="col s3 m2 1">
+                        <a href="#!"><img class=" responsive-img  contactIcon" src="public/img/gmail.png" alt="email">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-            <div class="collapsible-header" id="about">
-                <i class="material-icons">account_circle</i> About
-            </div>
-            <div class="collapsible-body" id="about_body">
-                <p>Conteudo</p>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <i class="material-icons">code</i> Portifolio
-            </div>
-
-            <div class="collapsible-body s" id="portifolio_body">
-
-                <div class="row">
-
-                    <div class="col s12 m6 2">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src=" https://cdn.scotch.io/10/gQtdUwRGQKOpbWRunyRg_How_to_Make_Your_Existing_React_App_Progressive_in_10_Minutes.png.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">This is a link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 2">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src=" https://cdn.scotch.io/1/d0YqyIA0Saq85mFLlS2w_whats-new-in-express-5.png.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">This is a link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m6 2">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src=" https://cdn.scotch.io/38945/0Mw9TvrT3mgawkLkAyhQ_Vue.Js%20and%20React.Js-A%20Quick%20Comparison.png.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">This is a link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <i class="material-icons">equalizer</i> Skills
-            </div>
-            <div class="collapsible-body" id="skills_body">
-                <p>Conteudo</p>
-            </div>
-        </li>
-        <li>
-            <div class="collapsible-header">
-                <i class="material-icons">folder_shared</i> Work History
-            </div>
-            <div class="collapsible-body" id="work_history_body">
-                <p>Conteudo</p>
-            </div>
-        </li>
-    </ul>
-
-    <footer class="page-footer  purple darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6 2">
-                    <h4 class="white-text">Contact me</h4>
-                </div>
-                <div class="col s12 m6 2">
-                    <div class="row">
-                        <div class="col s2 m2 ">
-                            <img class="circle responsive-img hoverable bWite" src="public/img/linkedin.png" alt="LinkedIn">
-                        </div>
-                        <div class="col s2 m2">
-                            <img class="circle responsive-img hoverable bWite" src="public/img/facebook-logo.png" alt="Facebook">
-                        </div>
-                        <div class="col s2 m2">
-                            <img class="circle responsive-img hoverable bWite" src="public/img/gmail.png" alt="">
-                        </div>
-                        <div class="col s2 m2">
-                            <img class="circle responsive-img hoverable bDarkGray" src="public/img/codeWars.png" alt="CodeWars">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m6 2">
-                    coded with love
-                </div>
-            </div>
+        <div id="footer" class="footer-copyright">
+            <span class="condensed light">coded with love </span>
         </div>
     </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="public/js/materialize.min.js"></script>
+    <script type="text/javascript" src="public/js/trianglify.min.js"></script>
+    <script type="text/javascript" src="public/js/formatter.js"></script>
+
+
+    <script>
+        $('.pushpin-nav').each(function() {
+            var $this = $(this);
+            var $target = $('#' + $(this).attr('data-target'));
+            $this.pushpin({
+                top: $target.offset().top,
+                bottom: $target.offset().top + $target.outerHeight() - $this.height()
+            });
+        });
+
+
+        $(document).ready(function() {
+            $('.target').pushpin({
+                top: 0,
+                bottom: 1000,
+                offset: 0
+            });
+        });
+    </script>
 </body>
 
 </html>
