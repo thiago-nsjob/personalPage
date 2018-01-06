@@ -27,13 +27,30 @@ function setFooterBackground() {
     footer.css("background-image", "url(" + pattern.png() + ")");
 }
 
+function setAboutBackground() {
+
+    var block = $('.block>.pushpin-nav');
+    var pattern = Trianglify({
+        width: block.width() + (block.width() * 0.8),
+        height: block.height() + (block.height() * 0.8),
+        seed: "RdPu",
+        cell_size: 5,
+        //x_colors: ["#3a2458", "#573b7a", "#6b528b", "#8e71b4", "#b3cde0", "#be29ec", "#be29ec", "#800080", "#660066"]
+        //custom
+    });
+
+    block.css("background-image", "url(" + pattern.png() + ")");
+}
 
 $(document).ready(function() {
 
     $(window).resize(function() {
         setFooterBackground();
         setHeaderBackground();
+        //   setAboutBackground();
     });
+
+    //  setAboutBackground();
     setFooterBackground();
     setHeaderBackground();
 });

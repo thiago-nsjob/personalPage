@@ -16,7 +16,7 @@
 <body>
     <div id="headerBlock" class="headerBlock">
         <div class="center-align sPadding">
-            <img class="circle responsive-img hoverable" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
+            <img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
         </div>
         <div class="center-align"><span class="title">Thiago N F Silva</span></div>
         <div id="topNavBar" class="block">
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div id="aboutBlock" class="block">
-        <nav class="pushpin-nav indigo lighten-4 hoverable" data-target="aboutBlock" style="top: 0px;">
+        <nav class="pushpin-nav indigo lighten-4" data-target="aboutBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">About</a>
                 <i class="material-icons">account_circle</i>
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div id="portifolioBlock" class="block">
-        <nav class="pushpin-nav" data-target="portifolioBlock" style="top: 0px;">
+        <nav class="pushpin-nav purple lighten-3" data-target="portifolioBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Portifolio</a>
                 <i class="material-icons">code</i>
@@ -110,21 +110,38 @@
 
         </div>
     </div>
+
     <div id="skillsBlock" class="block">
-        <nav class="pushpin-nav" data-target="skillsBlock" style="top: 0px;">
+        <nav class="pushpin-nav purple" data-target="skillsBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Skills</a>
                 <i class="material-icons">equalizer</i>
             </div>
+
         </nav>
+        <div class="valign-wrapper flow-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum.
+        </div>
     </div>
-    <div id="workingHistoriyBlock" class="block">
-        <nav class="pushpin-nav" data-target="workingHistoriyBlock" style="top: 0px;">
+    <div id="workingHistoriyBlock " class="block">
+        <nav class="pushpin-nav purple darken-4" data-target="workingHistoriyBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Work History</a>
                 <i class="material-icons">folder_shared</i>
             </div>
         </nav>
+        <div class="valign-wrapper flow-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+            pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+        </div>
     </div>
     <footer class="page-footer ">
         <div class="container ">
@@ -168,6 +185,7 @@
     <script>
         $('.pushpin-nav').each(function() {
             var $this = $(this);
+            console.log($(this).attr('data-target'));
             var $target = $('#' + $(this).attr('data-target'));
             $this.pushpin({
                 top: $target.offset().top,

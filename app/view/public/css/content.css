@@ -90,18 +90,31 @@
    
    .block {
        height: 100% !important;
-       z-index: 0 !important;
    }
    
    .headerBlock .nav-extended {
        background-color: transparent !important;
-   }
-   
-   .card {
-       z-index: -1 !important;
+       -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
+       box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
    }
    
    .brand-logo {
        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
        padding-left: 5% !important;
+   }
+   /* Forcers the navi bar overlap so the cards are left on the bottom*/
+   
+   .pinned {
+       /* create a new stacking context */
+       z-index: 51 !important;
+       /* to be below the parent element */
+   }
+   
+   .pin-top {
+       z-index: 50 !important;
+       /* to be below the parent element */
+   }
+   
+   .cardBlock {
+       display: flex;
    }
