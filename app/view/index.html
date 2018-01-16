@@ -5,7 +5,9 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+
     <link type="text/css" rel="stylesheet" href="public/css/content.css" media="screen,projection" />
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
@@ -14,33 +16,44 @@
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view deep-purple darken-1">
+
+                <a href="#!user"><img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt=""></a>
+                <a href="#!name"><span class="white-text name">Thiago N F Silva</span></a>
+                <a href="#!email"><span class="white-text email">thiago.nsjob@gmail.com</span></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <br>
+        <li><a href="#aboutBlock" class="brand-logo hoverable"><i class="material-icons">account_circle</i>About</a></li>
+        <br>
+        <li><a href="#portifolioBlock" class="brand-logo hoverable"><i class="material-icons">code</i>Portifolio</a></li>
+        <br>
+        <li><a href="#skillsBlock" class="brand-logo hoverable "><i class="material-icons">equalizer</i>Skills</a></li>
+        <br>
+        <li><a href="#workingHistoriyBlock" class="brand-logo  hoverable"><i class="material-icons">folder_shared</i>Work History</a></li>
+
+
+    </ul>
+    <div class="sidenavButton sidenav-trigger " data-target="slide-out">
+        <a href="#" class="btn-floating btn-large waves-effect waves-light cyan pulse"><i class="material-icons">menu</i></a>
+    </div>
     <div id="headerBlock" class="headerBlock">
         <div class="center-align sPadding">
-            <img class="circle responsive-img hoverable" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
+            <img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
         </div>
         <div class="center-align"><span class="title">Thiago N F Silva</span></div>
-        <div id="topNavBar" class="block">
-            <nav class="nav-extended" data-target="topNavBar" style="top: 0px;">
-                <div class="nav-wrapper">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    </ul>
-                    <div class="nav-content">
-                        <ul class="tabs tabs-transparent">
-                            <li class="tab"><a href="#about_body">About</a></li>
-                            <li class="tab"><a href="#portifolio_body">Portifolio</a></li>
-                            <li class="tab"><a href="#skills_body">Skills</a></li>
-                            <li class="tab"><a href="#work_history_body">Work History</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+
     </div>
     <div id="aboutBlock" class="block">
-        <nav class="pushpin-nav indigo lighten-4 hoverable" data-target="aboutBlock" style="top: 0px;">
+        <nav class="navbar-fixed  indigo lighten-4" data-target="aboutBlock">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">About</a>
-                <i class="material-icons">account_circle</i>
+                <i class="material-icons large">account_circle</i>
             </div>
         </nav>
         <div class="valign-wrapper flow-text">
@@ -53,78 +66,87 @@
         </div>
     </div>
     <div id="portifolioBlock" class="block">
-        <nav class="pushpin-nav" data-target="portifolioBlock" style="top: 0px;">
+        <nav class="navbar-fixed purple lighten-3" data-target="portifolioBlock">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Portifolio</a>
                 <i class="material-icons">code</i>
             </div>
         </nav>
-        <div class="row">
-            <div class="col s12 m6 2">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src=" https://cdn.scotch.io/10/gQtdUwRGQKOpbWRunyRg_How_to_Make_Your_Existing_React_App_Progressive_in_10_Minutes.png.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+        <div class="cardBlock">
+            <div class="card ">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src=" https://cdn.scotch.io/10/gQtdUwRGQKOpbWRunyRg_How_to_Make_Your_Existing_React_App_Progressive_in_10_Minutes.png.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-
-            <div class="col s12 m6 2">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src=" https://cdn.scotch.io/1/d0YqyIA0Saq85mFLlS2w_whats-new-in-express-5.png.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src=" https://cdn.scotch.io/1/d0YqyIA0Saq85mFLlS2w_whats-new-in-express-5.png.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-
-            <div class="col s12 m6 2">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src=" https://cdn.scotch.io/38945/0Mw9TvrT3mgawkLkAyhQ_Vue.Js%20and%20React.Js-A%20Quick%20Comparison.png.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src=" https://cdn.scotch.io/38945/0Mw9TvrT3mgawkLkAyhQ_Vue.Js%20and%20React.Js-A%20Quick%20Comparison.png.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    <p><a href="#">This is a link</a></p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                 </div>
             </div>
-
         </div>
+
     </div>
+
     <div id="skillsBlock" class="block">
-        <nav class="pushpin-nav" data-target="skillsBlock" style="top: 0px;">
+        <nav class="navbar-fixed purple" data-target="skillsBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Skills</a>
                 <i class="material-icons">equalizer</i>
             </div>
+
         </nav>
+        <div class="valign-wrapper flow-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum.
+        </div>
     </div>
     <div id="workingHistoriyBlock" class="block">
-        <nav class="pushpin-nav" data-target="workingHistoriyBlock" style="top: 0px;">
+        <nav class="navbar-fixed pushpin-nav purple darken-4" data-target="workingHistoriyBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Work History</a>
-                <i class="material-icons">folder_shared</i>
+                <i class="material-icons ">folder_shared</i>
             </div>
         </nav>
+        <div class="valign-wrapper flow-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+            sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+            Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius
+            laoreet. Quisque rutrum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies
+            nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+            pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+            Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+        </div>
     </div>
     <footer class="page-footer ">
         <div class="container ">
@@ -159,30 +181,40 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="public/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="public/js/trianglify.min.js"></script> -->
-    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
+    <!--   <script type="text/javascript" src="public/js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="public/js/trianglify.min.js"></script>
+    <!--  <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
     <script type="text/javascript" src="public/js/formatter.js"></script>
 
 
     <script>
-        $('.pushpin-nav').each(function() {
-            var $this = $(this);
-            var $target = $('#' + $(this).attr('data-target'));
-            $this.pushpin({
-                top: $target.offset().top,
-                bottom: $target.offset().top + $target.outerHeight() - $this.height()
-            });
-        });
-
+        var elem = document.querySelector('.sidenav');
+        var instance = M.Sidenav.init(elem);
 
         $(document).ready(function() {
-            $('.target').pushpin({
-                top: 0,
-                bottom: 1000,
-                offset: 0
-            });
+            $('.sidenav').sidenav();
         });
+
+        /*   $('.pushpin-nav').each(function() {
+                                                    var $this = $(this);
+                                                    console.log($(this).attr('data-target'));
+                                                    var $target = $('#' + $(this).attr('data-target'));
+                                                    $this.pushpin({
+                                                        top: $target.offset().top,
+                                                        bottom: $target.offset().top + $target.outerHeight() - $this.height()
+                                                    });
+                                                }); */
+
+
+        /*   $(document).ready(function() {
+
+              $('.target').pushpin({
+                  top: 0,
+                  bottom: 1000,
+                  offset: 0
+              });
+          }); */
     </script>
 </body>
 

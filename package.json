@@ -7,6 +7,7 @@
     "eslint": "^4.13.1",
     "express": "^4.16.2",
     "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
     "loadash": "^1.0.0",
     "materialize-css": "^0.100.2",
     "trianglify": "^1.2.0",
