@@ -186,3 +186,8 @@
        /* Safari */
        transition: 2s!important;
    }
+   
+   .sidenav a,
+   i {
+       color: white !important;
+   }
