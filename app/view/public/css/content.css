@@ -21,6 +21,16 @@
        .card {
            max-width: 80%!important;
        }
+       i {
+           font-size: 25pt !important;
+       }
+       .brand-logo {
+           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           padding-left: 10% !important;
+       }
+       .sidenavButton {
+           display: none;
+       }
    }
    
    @media screen and (min-width: 480px) {
@@ -44,6 +54,16 @@
        }
        .card {
            max-width: 60%!important;
+       }
+       i {
+           font-size: 30pt !important;
+       }
+       .brand-logo {
+           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           padding-left: 8% !important;
+       }
+       .sidenavButton {
+           display: inherit;
        }
    }
    
@@ -72,6 +92,16 @@
        .card {
            max-width: 40%!important;
        }
+       i {
+           font-size: 35pt !important;
+       }
+       .brand-logo {
+           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           padding-left: 7% !important;
+       }
+       .sidenavButton {
+           display: inherit;
+       }
    }
    
    @media screen and (min-width: 1200px) {
@@ -98,6 +128,16 @@
        .card {
            max-width: 35%!important;
        }
+       i {
+           font-size: 35pt !important;
+       }
+       .brand-logo {
+           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           padding-left: 5% !important;
+       }
+       .sidenavButton {
+           display: inherit;
+       }
    }
    
    .block {
@@ -109,23 +149,7 @@
        -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
        box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
    }
-   
-   .brand-logo {
-       font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       padding-left: 5% !important;
-   }
    /* Forcers the navi bar overlap so the cards are left on the bottom*/
-   
-   .pinned {
-       /* create a new stacking context */
-       z-index: 50 !important;
-       /* to be below the parent element */
-   }
-   
-   .pin-top {
-       z-index: 51 !important;
-       /* to be below the parent element */
-   }
    
    .cardBlock {
        display: flex;
@@ -138,4 +162,27 @@
        margin-left: 5%;
        margin-top: 2%;
        margin-right: 2%;
+   }
+   
+   .sidenavButton {
+       position: fixed !important;
+       top: 10% !important;
+       left: -2% !important;
+       -webkit-transition: 2s !important;
+       /* Safari */
+       transition: 2s!important;
+   }
+   
+   .sidenavButton:hover {
+       left: 0.5%!important;
+       -webkit-transition: 1s !important;
+       /* Safari */
+       transition: 1s!important;
+       /* to be below the parent element */
+   }
+   
+   a {
+       -webkit-transition: 2s !important;
+       /* Safari */
+       transition: 2s!important;
    }

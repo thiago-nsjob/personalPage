@@ -5,7 +5,9 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+
     <link type="text/css" rel="stylesheet" href="public/css/content.css" media="screen,projection" />
     <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
@@ -14,6 +16,31 @@
 </head>
 
 <body>
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view deep-purple darken-1">
+
+                <a href="#!user"><img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt=""></a>
+                <a href="#!name"><span class="white-text name">Thiago N F Silva</span></a>
+                <a href="#!email"><span class="white-text email">thiago.nsjob@gmail.com</span></a>
+            </div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#aboutBlock" class="brand-logo hoverable"><i class="material-icons">account_circle</i>About</a></li>
+        <br>
+        <li><a href="#portifolioBlock" class="brand-logo hoverable"><i class="material-icons">code</i>Portifolio</a></li>
+        <br>
+        <li><a href="#skillsBlock" class="brand-logo hoverable "><i class="material-icons">equalizer</i>Skills</a></li>
+        <br>
+        <li><a href="#workingHistoriyBlock" class="brand-logo  hoverable"><i class="material-icons">folder_shared</i>Work History</a></li>
+
+
+    </ul>
+    <div class="sidenavButton sidenav-trigger " data-target="slide-out">
+        <a href="#" class="btn-floating btn-large waves-effect waves-light cyan pulse"><i class="material-icons">menu</i></a>
+    </div>
     <div id="headerBlock" class="headerBlock">
         <div class="center-align sPadding">
             <img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
@@ -22,10 +49,10 @@
 
     </div>
     <div id="aboutBlock" class="block">
-        <nav class="pushpin-nav indigo lighten-4" data-target="aboutBlock" style="top: 0px;">
+        <nav class="navbar-fixed  indigo lighten-4" data-target="aboutBlock">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">About</a>
-                <i class="material-icons">account_circle</i>
+                <i class="material-icons large">account_circle</i>
             </div>
         </nav>
         <div class="valign-wrapper flow-text">
@@ -38,7 +65,7 @@
         </div>
     </div>
     <div id="portifolioBlock" class="block">
-        <nav class="pushpin-nav purple lighten-3" data-target="portifolioBlock" style="top: 0px;">
+        <nav class="navbar-fixed purple lighten-3" data-target="portifolioBlock">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Portifolio</a>
                 <i class="material-icons">code</i>
@@ -89,7 +116,7 @@
     </div>
 
     <div id="skillsBlock" class="block">
-        <nav class="pushpin-nav purple" data-target="skillsBlock" style="top: 0px;">
+        <nav class="navbar-fixed purple" data-target="skillsBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Skills</a>
                 <i class="material-icons">equalizer</i>
@@ -104,10 +131,10 @@
         </div>
     </div>
     <div id="workingHistoriyBlock" class="block">
-        <nav class="pushpin-nav purple darken-4" data-target="workingHistoriyBlock" style="top: 0px;">
+        <nav class="navbar-fixed pushpin-nav purple darken-4" data-target="workingHistoriyBlock" style="top: 0px;">
             <div class="nav-wrapper">
                 <a href="#" class="brand-logo left">Work History</a>
-                <i class="material-icons">folder_shared</i>
+                <i class="material-icons ">folder_shared</i>
             </div>
         </nav>
         <div class="valign-wrapper flow-text">
@@ -153,33 +180,40 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="public/js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="public/js/trianglify.min.js"></script> -->
-    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script>
+    <!--   <script type="text/javascript" src="public/js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="public/js/trianglify.min.js"></script>
+    <!--  <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
     <script type="text/javascript" src="public/js/formatter.js"></script>
 
 
     <script>
-        $('.pushpin-nav').each(function() {
-            var $this = $(this);
-            console.log($(this).attr('data-target'));
-            var $target = $('#' + $(this).attr('data-target'));
-            $this.pushpin({
-                top: $target.offset().top,
-                bottom: $target.offset().top + $target.outerHeight() - $this.height()
-            });
-        });
-
+        var elem = document.querySelector('.sidenav');
+        var instance = M.Sidenav.init(elem);
 
         $(document).ready(function() {
-            $('.carousel').carousel();
-
-            $('.target').pushpin({
-                top: 0,
-                bottom: 1000,
-                offset: 0
-            });
+            $('.sidenav').sidenav();
         });
+
+        /*   $('.pushpin-nav').each(function() {
+                                                    var $this = $(this);
+                                                    console.log($(this).attr('data-target'));
+                                                    var $target = $('#' + $(this).attr('data-target'));
+                                                    $this.pushpin({
+                                                        top: $target.offset().top,
+                                                        bottom: $target.offset().top + $target.outerHeight() - $this.height()
+                                                    });
+                                                }); */
+
+
+        /*   $(document).ready(function() {
+
+              $('.target').pushpin({
+                  top: 0,
+                  bottom: 1000,
+                  offset: 0
+              });
+          }); */
     </script>
 </body>
 
