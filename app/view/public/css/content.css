@@ -45,7 +45,7 @@
            font-size: 20pt;
        }
        header {
-           height: 60em;
+           height: 50em;
        }
        .greetings {
            font-size: 20pt;
@@ -270,7 +270,7 @@
    }
    
    ul.sidenav {
-       max-width: 40% !important;
+       max-width: 50% !important;
    }
    
    ul.sidenav a {
