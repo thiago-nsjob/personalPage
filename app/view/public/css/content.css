@@ -39,7 +39,7 @@
            padding-left: 10% !important;
        }
        .sidenavButton {
-           display: none;
+           display: inherit;
        }
        .footer-copyright {
            font-size: 20pt;
@@ -282,6 +282,6 @@
    }
    
    .user-view img {
-       width: 7em !important;
+       width: 8em !important;
        height: 8em !important;
    }
