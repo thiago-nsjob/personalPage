@@ -249,8 +249,8 @@
    
    .sidenavButton {
        position: fixed !important;
-       top: 10% !important;
-       left: -2em !important;
+       bottom: 10% !important;
+       right: -2em !important;
        -webkit-transition: 2s !important;
        /* Safari */
        transition: 2s!important;
@@ -258,7 +258,7 @@
    }
    
    .sidenavButton:hover {
-       left: 1em!important;
+       right: 1em!important;
        -webkit-transition: 1s !important;
        /* Safari */
        transition: 1s!important;
