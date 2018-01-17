@@ -39,7 +39,7 @@
            padding-left: 10% !important;
        }
        .sidenavButton {
-           display: none;
+           display: inherit;
        }
        .footer-copyright {
            font-size: 20pt;
