@@ -7,55 +7,67 @@
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="public/css/materialize.min.css" media="screen,projection" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="public/css/content.css" media="screen,projection" />
-    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <ul id="slide-out" class="sidenav grey darken-4">
+    <!--side menu-->
+    <ul id="slide-out" class="sidenav grey darken-3">
         <li>
-            <div class="user-view deep-purple darken-1">
+            <div class="user-view deep-purple darken-1 ">
 
-                <a href="#!user"><img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt=""></a>
-                <a href="#!name"><span class="white-text name">Thiago N F Silva</span></a>
-                <a href="#!email"><span class="white-text email">thiago.nsjob@gmail.com</span></a>
+                <img class="circle responsive-img center" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
+                <span class="white-text name ">Thiago N F Silva</span>
+                <span class="white-text email">thiago.nsjob@gmail.com</span>
             </div>
         </li>
         <li>
             <div class="divider"></div>
         </li>
         <br>
-        <li><a href="#aboutBlock" class="brand-logo hoverable"><i class="material-icons">account_circle</i>About</a></li>
+        <li><a href="#aboutBlock" class="brand-logo hoverable"><i class="material-icons">assignment_ind</i>About</a></li>
         <br>
         <li><a href="#portifolioBlock" class="brand-logo hoverable"><i class="material-icons">code</i>Portifolio</a></li>
         <br>
         <li><a href="#skillsBlock" class="brand-logo hoverable "><i class="material-icons">equalizer</i>Skills</a></li>
         <br>
         <li><a href="#workingHistoriyBlock" class="brand-logo  hoverable"><i class="material-icons">folder_shared</i>Work History</a></li>
-
-
     </ul>
     <div class="sidenavButton sidenav-trigger " data-target="slide-out">
         <a href="#" class="btn-floating btn-large waves-effect waves-light cyan pulse"><i class="material-icons">menu</i></a>
     </div>
-    <div id="headerBlock" class="headerBlock">
-        <div class="center-align sPadding">
-            <img class="circle responsive-img" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
-        </div>
-        <div class="center-align"><span class="title">Thiago N F Silva</span></div>
+    <!--side menu-->
 
-    </div>
-    <div id="aboutBlock" class="block">
-        <nav class="navbar-fixed  indigo lighten-4" data-target="aboutBlock">
+    <!--header-->
+    <header id="headerBlock" class="headerBlock">
+        <div class="center-align">
+            <span class="title greetings">hey there. I'm </span>
+            <br> <br><br>
+            <span class="title name">Thiago Silva</span>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <br><br>
+            <span class="title name">_full-Stack developer</span>
+        </div>
+    </header>
+    <!--header-->
+    <div id="aboutBlock" class="block lighten-2">
+        <nav class="navbar-fixed" data-target="aboutBlock">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">About</a>
-                <i class="material-icons large">account_circle</i>
+                <a href="#" class="brand-logo left">about me</a>
+                <i class="material-icons large">assignment_ind</i>
             </div>
         </nav>
+        <br><br>
+        <br><br>
+        <img id="profileImage" class=" circle responsive-img center" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuXAAAAJGM3ZTFhZjI2LWY4ZmYtNGYzYi04YTg3LWE4MDhiNjQ1MDllYg.jpg" alt="">
         <div class="valign-wrapper flow-text">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
             sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
@@ -65,10 +77,10 @@
             Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
         </div>
     </div>
-    <div id="portifolioBlock" class="block">
-        <nav class="navbar-fixed purple lighten-3" data-target="portifolioBlock">
+    <div id="portifolioBlock" class="block lighten-2">
+        <nav class="navbar-fixed" data-target="portifolioBlock">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">Portifolio</a>
+                <a href="#" class="brand-logo left">portifolio</a>
                 <i class="material-icons">code</i>
             </div>
         </nav>
@@ -116,10 +128,10 @@
 
     </div>
 
-    <div id="skillsBlock" class="block">
-        <nav class="navbar-fixed purple" data-target="skillsBlock" style="top: 0px;">
+    <div id="skillsBlock" class="block lighten-2">
+        <nav class="navbar-fixed" data-target="skillsBlock" style="top: 0px;">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">Skills</a>
+                <a href="#" class="brand-logo left">skills</a>
                 <i class="material-icons">equalizer</i>
             </div>
 
@@ -131,10 +143,10 @@
             laoreet. Quisque rutrum.
         </div>
     </div>
-    <div id="workingHistoriyBlock" class="block">
-        <nav class="navbar-fixed pushpin-nav purple darken-4" data-target="workingHistoriyBlock" style="top: 0px;">
+    <div id="workingHistoriyBlock" class="block lighten-2">
+        <nav class="navbar-fixed" data-target="workingHistoriyBlock" style="top: 0px;">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo left">Work History</a>
+                <a href="#" class="brand-logo left">work history</a>
                 <i class="material-icons ">folder_shared</i>
             </div>
         </nav>
@@ -148,23 +160,23 @@
             Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
         </div>
     </div>
-    <footer class="page-footer ">
+    <footer class="page-footer">
         <div class="container ">
             <div class="row ">
-                <h4 class="white-text">You can find me here</h4>
+                <h4 class="white-text footer-text">you can find me here</h4>
             </div>
             <div class="row">
                 <div class="container">
                     <div class="col s3 m2 1">
-                        <a href="#!"> <img class=" responsive-img contactIcon bBorder" src="public/img/linkedin.png" alt="LinkedIn">
+                        <a href="https://www.linkedin.com/in/thiagonfs-profile"> <img class=" responsive-img contactIcon bBorder" src="public/img/linkedin.png" alt="LinkedIn">
                         </a>
                     </div>
                     <div class="col s3 m2 1">
-                        <a href="#!"><img class=" responsive-img contactIcon" src="public/img/facebook-logo.svg" alt="Facebook">
+                        <a href="https://www.facebook.com/thiago.nascimento.79656"><img class=" responsive-img contactIcon" src="public/img/facebook-logo.svg" alt="Facebook">
                         </a>
                     </div>
                     <div class="col s3 m2 1">
-                        <a href="#!"><img class=" responsive-img  contactIcon" src="public/img/git.png" alt="git">
+                        <a href="https://github.com/thiago-nsjob"><img class=" responsive-img  contactIcon" src="public/img/git.png" alt="git">
                         </a>
                     </div>
                     <div class="col s3 m2 1">
@@ -181,40 +193,64 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
     <!--   <script type="text/javascript" src="public/js/materialize.min.js"></script> -->
     <script type="text/javascript" src="public/js/trianglify.min.js"></script>
+
     <!--  <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.2.0/trianglify.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
     <script type="text/javascript" src="public/js/formatter.js"></script>
 
-
     <script>
-        var elem = document.querySelector('.sidenav');
-        var instance = M.Sidenav.init(elem);
+        $(window).on("swipe", function() {
+            $(".sidenavButton").click();
+        })
 
         $(document).ready(function() {
-            $('.sidenav').sidenav();
+            $('.sidenav').sidenav({
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: true, // Choose whether you can drag to open on touch screens,);
+            })
+
+
+            // Select all links with hashes
+            $('a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
         });
-
-        /*   $('.pushpin-nav').each(function() {
-                                                    var $this = $(this);
-                                                    console.log($(this).attr('data-target'));
-                                                    var $target = $('#' + $(this).attr('data-target'));
-                                                    $this.pushpin({
-                                                        top: $target.offset().top,
-                                                        bottom: $target.offset().top + $target.outerHeight() - $this.height()
-                                                    });
-                                                }); */
-
-
-        /*   $(document).ready(function() {
-
-              $('.target').pushpin({
-                  top: 0,
-                  bottom: 1000,
-                  offset: 0
-              });
-          }); */
     </script>
 </body>
 
