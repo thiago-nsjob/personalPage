@@ -250,14 +250,15 @@
    .sidenavButton {
        position: fixed !important;
        top: 10% !important;
-       left: -2% !important;
+       left: -2em !important;
        -webkit-transition: 2s !important;
        /* Safari */
        transition: 2s!important;
+       z-index: 999;
    }
    
    .sidenavButton:hover {
-       left: 0.5%!important;
+       left: 1em!important;
        -webkit-transition: 1s !important;
        /* Safari */
        transition: 1s!important;
@@ -270,7 +271,7 @@
    }
    
    ul.sidenav {
-       max-width: 50% !important;
+       max-width: 60% !important;
    }
    
    ul.sidenav a {
