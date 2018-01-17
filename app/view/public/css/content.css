@@ -1,3 +1,13 @@
+   @font-face {
+       font-family: blackjack;
+       src: url("fonts/blackjack.otf");
+   }
+   
+   @font-face {
+       font-family: Caviar;
+       src: url("fonts/CaviarDreams.ttf");
+   }
+   
    @media screen and (min-width: 280px) {
        .title {
            font-size: 30pt;
@@ -31,12 +41,23 @@
        .sidenavButton {
            display: none;
        }
+       .footer-copyright {
+           font-size: 20pt;
+       }
+       header {
+           height: 60em;
+       }
+       .greetings {
+           font-size: 40pt;
+       }
+       .name {
+           font-size: 50pt;
+       }
    }
    
    @media screen and (min-width: 480px) {
        .title {
            font-size: 30pt;
-           color: white;
        }
        .contactIcon {
            max-width: 80% !important;
@@ -59,18 +80,28 @@
            font-size: 30pt !important;
        }
        .brand-logo {
-           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
            padding-left: 8% !important;
        }
        .sidenavButton {
            display: inherit;
+       }
+       .footer-copyright {
+           font-size: 18pt;
+       }
+       header {
+           height: 60em;
+       }
+       .greetings {
+           font-size: 40pt;
+       }
+       .name {
+           font-size: 50pt;
        }
    }
    
    @media screen and (min-width: 800px) {
        .title {
            font-size: 35pt;
-           color: white;
        }
        .sPadding {
            padding-top: 1%;
@@ -96,11 +127,22 @@
            font-size: 35pt !important;
        }
        .brand-logo {
-           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
            padding-left: 7% !important;
        }
        .sidenavButton {
            display: inherit;
+       }
+       .footer-copyright {
+           font-size: 18pt;
+       }
+       header {
+           height: 60em;
+       }
+       .greetings {
+           font-size: 60pt;
+       }
+       .name {
+           font-size: 70pt;
        }
    }
    
@@ -132,24 +174,65 @@
            font-size: 35pt !important;
        }
        .brand-logo {
-           font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           padding-left: 5% !important;
+           padding-left: 4% !important;
        }
        .sidenavButton {
            display: inherit;
        }
+       .footer-copyright {
+           font-size: 20pt;
+       }
+       header {
+           height: 60em;
+       }
+       .greetings {
+           font-size: 70pt;
+       }
+       .name {
+           font-size: 80pt;
+       }
+   }
+   
+   .user-view img {
+       max-height: 20em !important;
+   }
+   
+   .brand-logo,
+   .footer-text,
+   .name {
+       font-family: Caviar;
    }
    
    .block {
        height: 100% !important;
+       color: black !important;
    }
    
-   .headerBlock .nav-extended {
-       background-color: transparent !important;
-       -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
-       box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0) !important;
+   .navbar-fixed {
+       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb5fa2+0,6c00f9+0,fcfcfc+100 */
+       background: #cb5fa2 !important;
+       /* Old browsers */
+       background: -moz-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
+       /* FF3.6-15 */
+       background: -webkit-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%) !important;
+       /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(135deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
+       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cb5fa2', endColorstr='#fcfcfc', GradientType=1) !important;
+       /* IE6-9 fallback on horizontal gradient */
    }
-   /* Forcers the navi bar overlap so the cards are left on the bottom*/
+   
+   .headerBlock {
+       padding-top: 10%;
+   }
+   
+   .title {
+       color: white;
+   }
+   
+   .greetings {
+       font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+   }
    
    .cardBlock {
        display: flex;
@@ -181,13 +264,24 @@
        /* to be below the parent element */
    }
    
-   a {
-       -webkit-transition: 2s !important;
-       /* Safari */
-       transition: 2s!important;
-   }
-   
-   .sidenav a,
+   a,
    i {
        color: white !important;
+   }
+   
+   ul.sidenav {
+       max-width: 40% !important;
+   }
+   
+   ul.sidenav a {
+       font-size: 1em;
+   }
+   
+   .footer-copyright {
+       font-family: blackjack;
+   }
+   
+   .user-view img {
+       width: 10em !important;
+       height: 10em !important;
    }
