@@ -16,7 +16,7 @@
    }
    
    .greetings {
-       font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+       font-family: timeburn;
    }
    
    .block {
@@ -48,7 +48,7 @@
    
    .cardBlock {
        display: flex;
-       justify-content: left;
+       justify-content: center;
        flex-wrap: wrap;
    }
    
@@ -97,4 +97,23 @@
    .user-view img {
        width: 8em !important;
        height: 8em !important;
+   }
+   
+   .content {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       flex-flow: row;
+   }
+   
+   .content-element {
+       flex: 1 1 auto;
+       margin: 2% 2% 2% 2%;
+       min-width: 20%;
+   }
+   
+   .content-image {
+       flex: 2 1 auto;
+       margin: 2% 2% 2% 2%;
+       min-width: 20%;
    }
