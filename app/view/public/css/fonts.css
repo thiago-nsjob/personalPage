@@ -17,3 +17,8 @@
     font-family: trench;
     src: url("fonts/trench100free.otf");
 }
+
+@font-face {
+    font-family: timeburn;
+    src: url("fonts/timeburnernormal.ttf");
+}
