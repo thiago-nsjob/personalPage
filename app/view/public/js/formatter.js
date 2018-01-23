@@ -4,8 +4,8 @@ function setHeaderBackground() {
     var pattern = Trianglify({
         width: header.width() + (header.width() * 1),
         height: header.height() + (header.height() * 1),
-        cell_size: 100,
-        variance: "5",
+        cell_size: 120,
+        variance: "2",
         //x_colors: ["#999999", "#777777", "#555555", "#333333", "#111111", "#000000", "#333333", "#555555", "#777777", "#999999"]
         //x_colors: ["#011f4b", "#03396c", "#005b96", "#6497b1", "#b3cde0", "#be29ec", "#be29ec", "#800080", "#660066"]
         x_colors: ["#220046", "#925cb5", "#3d0a47", "#9108d7", "#470e79", "#925cb5", "#800080", "#925cb5"]
