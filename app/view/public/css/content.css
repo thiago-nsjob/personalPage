@@ -117,3 +117,7 @@
        margin: 2% 2% 2% 2%;
        min-width: 20%;
    }
+   
+   .presentation_water {
+       display: none !important;
+   }

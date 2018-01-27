@@ -51,6 +51,7 @@ $(document).ready(function() {
     $(window).resize(function() {
         setFooterBackground();
         setHeaderBackground();
+        //hide unecessary logos and brands 
 
     });
     setFooterBackground();
