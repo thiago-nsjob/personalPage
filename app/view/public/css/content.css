@@ -1,123 +1,189 @@
-   @import url("media.css");
-   @import url("fonts.css");
-   .user-view img {
-       max-height: 20em !important;
-   }
-   
-   .brand-logo,
-   .footer-text,
-   .email,
-   .subtitle {
-       font-family: trench;
-   }
-   
-   .name {
-       font-family: above;
-   }
-   
-   .greetings {
-       font-family: timeburn;
-   }
-   
-   .block {
-       height: 100% !important;
-       color: black !important;
-   }
-   
-   .navbar-fixed {
-       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb5fa2+0,6c00f9+0,fcfcfc+100 */
-       background: #cb5fa2 !important;
-       /* Old browsers */
-       background: -moz-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
-       /* FF3.6-15 */
-       background: -webkit-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%) !important;
-       /* Chrome10-25,Safari5.1-6 */
-       background: linear-gradient(135deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
-       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-       filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cb5fa2', endColorstr='#fcfcfc', GradientType=1) !important;
-       /* IE6-9 fallback on horizontal gradient */
-   }
-   
-   .headerBlock {
-       padding-top: 10%;
-   }
-   
-   .title {
-       color: white;
-   }
-   
-   .cardBlock {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-   }
-   
-   .card {
-       flex: 1 1 auto;
-       margin-left: 5%;
-       margin-top: 2%;
-       margin-right: 2%;
-   }
-   
-   .sidenavButton {
-       position: fixed !important;
-       bottom: 10% !important;
-       right: -2em !important;
-       -webkit-transition: 2s !important;
-       /* Safari */
-       transition: 2s!important;
-       z-index: 999;
-   }
-   
-   .sidenavButton:hover {
-       right: 1em!important;
-       -webkit-transition: 1s !important;
-       /* Safari */
-       transition: 1s!important;
-       /* to be below the parent element */
-   }
-   
-   a,
-   i {
-       color: white !important;
-   }
-   
-   ul.sidenav {
-       max-width: 60% !important;
-   }
-   
-   ul.sidenav a {
-       font-size: 1em;
-   }
-   
-   .footer-copyright {
-       font-family: blackjack;
-   }
-   
-   .user-view img {
-       width: 8em !important;
-       height: 8em !important;
-   }
-   
-   .content {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-       flex-flow: row;
-   }
-   
-   .content-element {
-       flex: 1 1 auto;
-       margin: 2% 2% 2% 2%;
-       min-width: 20%;
-   }
-   
-   .content-image {
-       flex: 2 1 auto;
-       margin: 2% 2% 2% 2%;
-       min-width: 20%;
-   }
-   
-   .presentation_water {
-       display: none !important;
-   }
+@import url("media.css");
+@import url("fonts.css");
+.user-view img {
+    max-height: 20em !important;
+}
+
+.brand-logo,
+.footer-text,
+.email,
+.subtitle {
+    font-family: trench;
+}
+
+.name {
+    font-family: above;
+}
+
+.greetings {
+    font-family: timeburn;
+}
+
+.block {
+    height: 100% !important;
+    color: black !important;
+}
+
+.navbar-fixed {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb5fa2+0,6c00f9+0,fcfcfc+100 */
+    background: #cb5fa2 !important;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%) !important;
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #cb5fa2 0%, #6c00f9 0%, #fcfcfc 100%)!important;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cb5fa2', endColorstr='#fcfcfc', GradientType=1) !important;
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.headerBlock {
+    padding-top: 10%;
+}
+
+.title {
+    color: white;
+}
+
+.cardBlock {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 auto;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
+.sidenavButton {
+    position: fixed !important;
+    bottom: 10% !important;
+    right: -2em !important;
+    -webkit-transition: 2s !important;
+    /* Safari */
+    transition: 2s!important;
+    z-index: 999;
+}
+
+.sidenavButton:hover {
+    right: 1em!important;
+    -webkit-transition: 1s !important;
+    /* Safari */
+    transition: 1s!important;
+    /* to be below the parent element */
+}
+
+a,
+i {
+    color: white !important;
+}
+
+ul.sidenav {
+    max-width: 60% !important;
+}
+
+ul.sidenav a {
+    font-size: 1em;
+}
+
+.footer-copyright {
+    font-family: blackjack;
+}
+
+.user-view img {
+    width: 8em !important;
+    height: 8em !important;
+}
+
+.presentation_water {
+    display: none !important;
+}
+
+
+/*About*/
+
+#aboutBlock {
+    padding-top: -200px;
+}
+
+#aboutBlock .aboutbanner {
+    width: 100%;
+    height: 10% !important;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    margin-bottom: 2em;
+}
+
+.flex p,
+i,
+h5,
+h4,
+article {
+    font-family: enigmatica;
+    color: dimgrey;
+}
+
+.flex i {
+    font-size: 20pt!important;
+}
+
+.flexdiv {
+    flex: 1;
+    padding: 1em;
+    text-align: justify;
+}
+
+.flexdiv img {
+    margin-right: 1em;
+    width: 100%;
+}
+
+.flexdiv img {
+    margin-right: 1em;
+    width: auto;
+}
+
+.contentbig {
+    flex-basis: 40%;
+}
+
+.contenttop {
+    align-self: flex-start;
+}
+
+.contentleft {
+    margin-right: 1em !important;
+    margin-bottom: .2em !important;
+    flex-basis: auto;
+}
+
+.divider {
+    width: 0.5%;
+    height: 20em;
+    margin: 6px 0;
+    background: #4545ab;
+    border-radius: 10px;
+    margin-right: 5%;
+}
+
+.aboutMe h3,
+h4 {
+    display: inline;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.aboutMe img {
+    max-width: 20%;
+}

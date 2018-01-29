@@ -22,3 +22,8 @@
     font-family: timeburn;
     src: url("fonts/timeburnernormal.ttf");
 }
+
+@font-face {
+    font-family: enigmatica;
+    src: url("fonts/Enigma__2.ttf");
+}
