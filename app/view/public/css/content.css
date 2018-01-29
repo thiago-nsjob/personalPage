@@ -121,7 +121,7 @@ ul.sidenav a {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 10%;
+    padding: 2%;
     margin-bottom: 2em;
 }
 
@@ -174,7 +174,7 @@ article {
     margin: 6px 0;
     background: #4545ab;
     border-radius: 10px;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .aboutMe h3,
