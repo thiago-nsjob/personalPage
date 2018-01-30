@@ -77,9 +77,6 @@
     .aboutMe h5 {
         font-size: 15pt;
     }
-    .divider {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 480px) {
@@ -140,9 +137,6 @@
     }
     .flex {
         padding: 2%;
-    }
-    .divider {
-        display: none;
     }
 }
 
