@@ -8,8 +8,11 @@ function setHeaderBackground() {
         variance: "2",
         //x_colors: ["#999999", "#777777", "#555555", "#333333", "#111111", "#000000", "#333333", "#555555", "#777777", "#999999"]
         //x_colors: ["#011f4b", "#03396c", "#005b96", "#6497b1", "#b3cde0", "#be29ec", "#be29ec", "#800080", "#660066"]
-        x_colors: ["#220046", "#925cb5", "#3d0a47", "#9108d7", "#470e79", "#925cb5", "#800080", "#925cb5"]
+        //x_colors: ["#220046", "#925cb5", "#3d0a47", "#9108d7", "#470e79", "#925cb5", "#800080", "#925cb5"]
+        x_colors: ["#143850", "#02403d", "#3949ab", "#02403d", "#00838f", "#143850", "#02403d"]
             //http://www.color-hex.com/color-palette/1294 + http://www.color-hex.com/color-palette/1835
+            //x_colors: ["#364f38", "#925cb5", "#bebf6f", "#925cb5", "#925cb5", "#925cb5"]
+
     });
 
     header.css("background-image", "url(" + pattern.png() + ")");
