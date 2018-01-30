@@ -57,7 +57,7 @@
         right: 1em!important;
     }
     .flex {
-        padding: 0%;
+        padding: 2%;
     }
     .divider {
         margin: 0;
@@ -76,6 +76,9 @@
     }
     .aboutMe h5 {
         font-size: 15pt;
+    }
+    .divider {
+        display: none;
     }
 }
 
@@ -136,16 +139,10 @@
         right: 1em!important;
     }
     .flex {
-        padding: 0%;
+        padding: 2%;
     }
     .divider {
-        margin: 0;
-        margin-right: 0%;
-    }
-    .flexdiv {
-        flex: 1;
-        padding: 1em;
-        text-align: justify;
+        display: none;
     }
 }
 
