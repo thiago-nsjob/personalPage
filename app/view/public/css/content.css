@@ -48,15 +48,16 @@
 .sidenavButton {
     position: fixed !important;
     bottom: 10% !important;
-    right: -2em !important;
+    left: -2em !important;
     -webkit-transition: 2s !important;
     /* Safari */
     transition: 2s!important;
     z-index: 999;
+    max-width: 5em;
 }
 
 .sidenavButton:hover {
-    right: 1em!important;
+    left: 1em!important;
     -webkit-transition: 1s !important;
     /* Safari */
     transition: 1s!important;
@@ -84,6 +85,10 @@ ul.sidenav li {
     font-family: blackjack;
 }
 
+.user-view {
+    background-color: #143850 !important;
+}
+
 .user-view img {
     width: 8em !important;
     height: 8em !important;
@@ -108,11 +113,10 @@ ul.sidenav li {
 .flex {
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2%;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .flexdiv.aboutIntro h3,
@@ -120,6 +124,7 @@ h4,
 p {
     font-family: Caviar;
     color: dimgrey;
+    word-break: initial;
 }
 
 .flexdiv.aboutMe {
@@ -162,7 +167,7 @@ h5 {
 }
 
 .aboutMe li {
-    margin: 0 0 2em 0;
+    margin: 0 0 1em 0;
     padding-left: 6em;
     vertical-align: middle;
 }

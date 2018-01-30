@@ -26,7 +26,7 @@ function setFooterBackground() {
         height: footer.height() + (footer.height() * 0.7),
         cell_size: 60,
 
-        x_colors: ["#3a2458", "#573b7a", "#6b528b", "#8e71b4", "#b3cde0", "#be29ec", "#be29ec", "#800080", "#660066"]
+        x_colors: ["#143850", "#02403d", "#3949ab", "#02403d", "#00838f", "#143850", "#02403d"]
             //custom
     });
 
