@@ -1,4 +1,10 @@
 @media screen and (min-width: 280px) {
+    .subtitle {
+        padding-top: 30%;
+    }
+    .name {
+        padding-top: 30%;
+    }
     .title {
         font-size: 30pt;
         color: white;
@@ -50,9 +56,36 @@
     .sidenavButton:hover {
         right: 1em!important;
     }
+    .flex {
+        padding: 0%;
+    }
+    .divider {
+        margin: 0;
+        margin-right: 0%;
+    }
+    .flexdiv {
+        flex: 1;
+        padding: 1em;
+        text-align: justify;
+    }
+    .wideflex {
+        min-width: 20em;
+    }
+    .aboutMe h4 {
+        font-size: 20pt;
+    }
+    .aboutMe h5 {
+        font-size: 15pt;
+    }
 }
 
 @media screen and (min-width: 480px) {
+    .subtitle {
+        padding-top: 5%;
+    }
+    .name {
+        padding-top: 10%;
+    }
     .title {
         font-size: 30pt;
     }
@@ -102,9 +135,27 @@
     .sidenavButton:hover {
         right: 1em!important;
     }
+    .flex {
+        padding: 0%;
+    }
+    .divider {
+        margin: 0;
+        margin-right: 0%;
+    }
+    .flexdiv {
+        flex: 1;
+        padding: 1em;
+        text-align: justify;
+    }
 }
 
 @media screen and (min-width: 800px) {
+    .subtitle {
+        padding-top: 5%;
+    }
+    .name {
+        padding-top: 10%;
+    }
     .title {
         font-size: 35pt;
     }
@@ -162,9 +213,21 @@
     .sidenavButton:hover {
         right: 1em!important;
     }
+    .flexdiv {
+        flex: 1;
+        padding: 1em;
+        text-align: justify;
+        min-width: 400px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .subtitle {
+        padding-top: 5%;
+    }
+    .name {
+        padding-top: 10%;
+    }
     .title {
         font-size: 40pt;
     }
@@ -216,5 +279,11 @@
     }
     .sidenavButton:hover {
         right: 1em!important;
+    }
+    .flexdiv {
+        flex: 1;
+        padding: 1em;
+        text-align: justify;
+        min-width: 400px;
     }
 }
