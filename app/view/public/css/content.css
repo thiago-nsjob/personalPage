@@ -139,18 +139,12 @@ p {
     font-size: 20pt!important;
 }
 
-.flexdiv img {
-    margin-right: 1em;
-    width: 100%;
-}
-
 .contenttop {
     align-self: flex-start;
 }
 
 .divider {
     width: 0.5%;
-    height: 20em;
     margin: 1em 0;
     background: #4545ab;
     border-radius: 10px;
@@ -170,8 +164,4 @@ h5 {
     margin: 0 0 1em 0;
     padding-left: 6em;
     vertical-align: middle;
-}
-
-.aboutMe img {
-    max-width: 20%;
 }
